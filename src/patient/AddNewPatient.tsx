@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import PatientModal from './PatientModal'
 import { Patient } from './types'
+import Button from '../shared/Button'
 
 type Props = {
   handleNewPatient: (formData: Patient) => void
@@ -15,11 +16,11 @@ const AddNewPatient = ({ handleNewPatient }: Props) => {
 
   return (
     <>
-      <button onClick={() => setIsEditModalOpen(true)}>Add</button>
+      <Button onClick={() => setIsEditModalOpen(true)}>Add</Button>
       <PatientModal
         isOpen={isEditModalOpen}
         onClose={() => setIsEditModalOpen(false)}
-        onEdit={createPatient}
+        onSave={createPatient}
       />
     </>
   )
