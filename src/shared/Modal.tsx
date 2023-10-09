@@ -62,8 +62,9 @@ export default function Modal({ children, title, handleClose }: ModalProps) {
           <Button
             className={css({
               pos: 'absolute',
-              top: 4,
+              top: 8,
               right: 8,
+              width: '32px',
             })}
             onClick={handleClose}
           >

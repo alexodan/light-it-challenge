@@ -6,9 +6,6 @@ export const containerStyle = css({
   overflow: 'hidden',
   position: 'relative',
   height: '500px',
-  _hover: {
-    boxShadow: 'lg',
-  },
 })
 
 export const avatarStyle = css({
