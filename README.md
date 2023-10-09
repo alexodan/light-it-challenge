@@ -1,3 +1,37 @@
+# About the challenge
+
+## How to run it
+
+To run locally just
+
+```shell
+yarn
+yarn panda # generates the styles
+yarn dev
+```
+
+## Stack used
+
+- React
+- TypeScript
+- [Panda css](https://panda-css.com/docs/)
+- [TS Hooks (useFetch)](https://usehooks-ts.com/)
+- [Zod (validation)](https://zod.dev/)
+- Eslint
+- Prettier
+
+## Decisions decisions
+
+- I used React since is the library I'm used to work with and still enjoy very much using it.
+- For styling, I opted for Panda CSS, a CSS-in-JS library. I've only used it for a pet project, but I found the development experience satisfying. Besides, I wanted to rest from Tailwind.
+- I added TS Hooks to have `useFetch`. If persistence were a requirement, I would likely have used React Query.
+- Eslint and prettier, mandatory in my projects.
+
+## Resources
+
+- Zod formData built-in support discussion https://github.com/colinhacks/zod/discussions/1860
+- Form validations and accessibility https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
